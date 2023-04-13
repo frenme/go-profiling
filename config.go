@@ -17,7 +17,7 @@ type Config struct {
 func parseFlags() *Config {
 	config := &Config{}
 	
-	flag.StringVar(&config.Port, "port", "8080", "Server port")
+	flag.StringVar(&config.Port, "port", "8080", "HTTP server port")
 	flag.BoolVar(&config.EnableCPUProf, "cpu-prof", true, "Enable CPU profiling")
 	flag.BoolVar(&config.EnableTrace, "trace", true, "Enable execution tracing")
 	flag.StringVar(&config.CPUProfFile, "cpu-file", "cpu.prof", "CPU profile output file")
