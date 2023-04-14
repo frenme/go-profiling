@@ -24,8 +24,8 @@ func generateRandomData(size int) []int {
 }
 
 func printSystemInfo() {
-	fmt.Printf("NumCPU: %d\n", runtime.NumCPU())
-	fmt.Printf("NumGoroutine: %d\n", runtime.NumGoroutine())
+	fmt.Printf("CPU cores: %d\n", runtime.NumCPU())
+	fmt.Printf("Active goroutines: %d\n", runtime.NumGoroutine())
 	
 	var m runtime.MemStats
 	runtime.ReadMemStats(&m)
